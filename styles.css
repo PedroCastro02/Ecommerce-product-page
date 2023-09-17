@@ -1,0 +1,221 @@
+:root {
+        --Orange: hsl(26, 100%, 55%);
+        --PaleOrange: hsl(25, 100%, 94%);
+        --VeryDarkBlue: hsl(220, 13%, 13%);
+        --DarkGrayishBlue: hsl(219, 9%, 45%);
+        --GrayishBlue: hsl(216, 2%, 54%);
+        --LightGrayishBlue: hsl(0, 3%, 92%);
+        --White: hsl(0, 0%, 100%);
+        --BlackWith75OpacityForLightboxBackground: hsl(0, 0%, 0%, 0.75);
+}
+    
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+    font-weight: 400;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+.divDeCima {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    height: 160px;
+    border-bottom: 2px solid var(--DarkGrayishBlue);
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+.divisao {
+    margin-left: 40px;
+
+}
+.divisao:hover {
+    border-bottom: 3.5px solid var(--Orange);
+}
+.controleEsquerda {
+    display: flex;
+}
+.controleDireita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-control {
+    width: 70%;
+    height:80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.images{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+}
+#img1 {
+    border-radius: 20px;
+    width: 525px;
+}
+.imagens-menores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas igualmente espaçadas */
+    gap: 10px; /* Define o espaçamento entre as células da grid */
+    margin-top: 10px;
+}
+
+.imagens img {
+    max-width: 100%; /* Ajusta a largura máxima para garantir que a imagem não ultrapasse o container */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 20px;
+    width: 124px;
+}
+
+
+
+
+.comprar {
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+    height: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#NomeEmpresa {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--Orange);
+    font-family: 'Kumbh Sans'
+}
+.comprar h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.comprar p {
+    margin-top: 45px;
+    font-size: 22px;
+    font-weight: 300; 
+    color: var(--DarkGrayishBlue)
+}
+#valor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
+#valor1 {
+    font-size: 40px;
+    font-weight: 700; 
+}
+#desconto {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 20px; 
+    color: var(--Orange);
+    background-color: var(--PaleOrange);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+#valorAntigo {
+    text-decoration: line-through;
+    color: var(--GrayishBlue);
+    margin-top: 13px;
+}
+
+.botoes-control {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin-top: 40px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Remove a aparência padrão do navegador */
+  appearance: none; 
+}
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--LightGrayishBlue);
+    border-radius: 10px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#display {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+    font-weight: 400;
+    background-color: transparent;
+    border: none; /* Removendo a borda */
+    outline: none; /* Removendo a borda de foco */
+    padding-left: 33px; /* Reduz o padding à esquerda */
+    padding-right: 10px; /* Reduz o padding à direita */
+    max-width: 70px; /* Define a largura máxima */
+}
+
+.botao-adicionar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Orange);
+    border-radius: 10px;
+    font-weight: 400;
+    border-color: white;
+    cursor: pointer;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.botao-adicionar h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+#botao-menos{
+    display: flex;
+    align-items: center;
+    border: none; /* Removendo a borda */
+    outline: none; /* Removendo a borda de foco */
+    cursor: pointer;
+    background-color: var(--LightGrayishBlue);
+}
+
+#botao-mais {
+    border: none; /* Removendo a borda */
+    outline: none; /* Removendo a borda de foco */
+    cursor: pointer;
+    background-color: var(--LightGrayishBlue);
+}
+
+
